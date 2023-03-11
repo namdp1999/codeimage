@@ -1,0 +1,257 @@
+{
+  "name": "@codeimage/highlight",
+  "version": "0.10.6",
+  "module": "./dist/index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/public-api.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "main": "./dist/index.js",
+      "node": "./dist/index.js",
+      "require": "./dist/index.js",
+      "browser": "./dist/index.js",
+      "types": "./dist/public-api.d.ts"
+    },
+    "./themes": {
+      "import": "./dist/lib/themes/index.js",
+      "types": "./dist/lib/themes/index.d.ts"
+    },
+    "./arcDark": {
+      "import": "./dist/lib/themes/arcDark/index.js",
+      "types": "./dist/lib/themes/arcDark/index.d.ts"
+    },
+    "./auraDark": {
+      "import": "./dist/lib/themes/auraDark/index.js",
+      "types": "./dist/lib/themes/auraDark/index.d.ts"
+    },
+    "./coldarkCold": {
+      "import": "./dist/lib/themes/coldarkCold/index.js",
+      "types": "./dist/lib/themes/coldarkCold/index.d.ts"
+    },
+    "./coldarkDark": {
+      "import": "./dist/lib/themes/coldarkDark/index.js",
+      "types": "./dist/lib/themes/coldarkDark/index.d.ts"
+    },
+    "./dracula": {
+      "import": "./dist/lib/themes/dracula/index.js",
+      "types": "./dist/lib/themes/dracula/index.d.ts"
+    },
+    "./duotoneDark": {
+      "import": "./dist/lib/themes/duotoneDark/index.js",
+      "types": "./dist/lib/themes/duotoneDark/index.d.ts"
+    },
+    "./duotoneSea": {
+      "import": "./dist/lib/themes/duotoneSea/index.js",
+      "types": "./dist/lib/themes/duotoneSea/index.d.ts"
+    },
+    "./holi": {
+      "import": "./dist/lib/themes/holi/index.js",
+      "types": "./dist/lib/themes/holi/index.d.ts"
+    },
+    "./light": {
+      "import": "./dist/lib/themes/light/index.js",
+      "types": "./dist/lib/themes/light/index.d.ts"
+    },
+    "./materialLight": {
+      "import": "./dist/lib/themes/materialLight/index.js",
+      "types": "./dist/lib/themes/materialLight/index.d.ts"
+    },
+    "./materialOcean": {
+      "import": "./dist/lib/themes/materialOcean/index.js",
+      "types": "./dist/lib/themes/materialOcean/index.d.ts"
+    },
+    "./materialPalenight": {
+      "import": "./dist/lib/themes/materialPalenight/index.js",
+      "types": "./dist/lib/themes/materialPalenight/index.d.ts"
+    },
+    "./materialVolcano": {
+      "import": "./dist/lib/themes/materialVolcano/index.js",
+      "types": "./dist/lib/themes/materialVolcano/index.d.ts"
+    },
+    "./nightOwl": {
+      "import": "./dist/lib/themes/nightOwl/index.js",
+      "types": "./dist/lib/themes/nightOwl/index.d.ts"
+    },
+    "./oneDark": {
+      "import": "./dist/lib/themes/oneDark/index.js",
+      "types": "./dist/lib/themes/oneDark/index.d.ts"
+    },
+    "./synthwave84": {
+      "import": "./dist/lib/themes/synthwave84/index.js",
+      "types": "./dist/lib/themes/synthwave84/index.d.ts"
+    },
+    "./vsCodeDark": {
+      "import": "./dist/lib/themes/vsCodeDark/index.js",
+      "types": "./dist/lib/themes/vsCodeDark/index.d.ts"
+    },
+    "./githubDark": {
+      "import": "./dist/lib/themes/githubDark/index.js",
+      "types": "./dist/lib/themes/githubDark/index.d.ts"
+    },
+    "./githubLight": {
+      "import": "./dist/lib/themes/githubLight/index.js",
+      "types": "./dist/lib/themes/githubLight/index.d.ts"
+    },
+    "./poimandres": {
+      "import": "./dist/lib/themes/poimandres/index.js",
+      "types": "./dist/lib/themes/poimandres/index.d.ts"
+    },
+    "./shadeOfPurple": {
+      "import": "./dist/lib/themes/shadeOfPurple/index.js",
+      "types": "./dist/lib/themes/shadeOfPurple/index.d.ts"
+    },
+    "./panda": {
+      "import": "./dist/lib/themes/panda/index.js",
+      "types": "./dist/lib/themes/panda/index.d.ts"
+    },
+    "./moonlight": {
+      "import": "./dist/lib/themes/moonlight/index.js",
+      "types": "./dist/lib/themes/moonlight/index.d.ts"
+    },
+    "./vitesseDark": {
+      "import": "./dist/lib/themes/vitesseDark/index.js",
+      "types": "./dist/lib/themes/vitesseDark/index.d.ts"
+    },
+    "./githubDarkDimmed": {
+      "import": "./dist/lib/themes/githubDarkDimmed/index.js",
+      "types": "./dist/lib/themes/githubDarkDimmed/index.d.ts"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "arcDark": [
+        "./dist/lib/themes/arcDark/index.d.ts"
+      ],
+      "auraDark": [
+        "./dist/lib/themes/auraDark/index.d.ts"
+      ],
+      "coldarkCold": [
+        "./dist/lib/themes/coldarkCold/index.d.ts"
+      ],
+      "coldarkDark": [
+        "./dist/lib/themes/coldarkDark/index.d.ts"
+      ],
+      "dracula": [
+        "./dist/lib/themes/dracula/index.d.ts"
+      ],
+      "duotoneDark": [
+        "./dist/lib/themes/duotoneDark/index.d.ts"
+      ],
+      "duotoneSea": [
+        "./dist/lib/themes/duotoneSea/index.d.ts"
+      ],
+      "holi": [
+        "./dist/lib/themes/holi/index.d.ts"
+      ],
+      "light": [
+        "./dist/lib/themes/light/index.d.ts"
+      ],
+      "materialLight": [
+        "./dist/lib/themes/materialLight/index.d.ts"
+      ],
+      "materialOcean": [
+        "./dist/lib/themes/materialOcean/index.d.ts"
+      ],
+      "materialPalenight": [
+        "./dist/lib/themes/materialPalenight/index.d.ts"
+      ],
+      "materialVolcano": [
+        "./dist/lib/themes/materialVolcano/index.d.ts"
+      ],
+      "nightOwl": [
+        "./dist/lib/themes/nightOwl/index.d.ts"
+      ],
+      "oneDark": [
+        "./dist/lib/themes/oneDark/index.d.ts"
+      ],
+      "synthwave84": [
+        "./dist/lib/themes/synthwave84/index.d.ts"
+      ],
+      "vsCodeDark": [
+        "./dist/lib/themes/vsCodeDark/index.d.ts"
+      ],
+      "githubDark": [
+        "./dist/lib/themes/githubDark/index.d.ts"
+      ],
+      "githubLight": [
+        "./dist/lib/themes/githubLight/index.d.ts"
+      ],
+      "poimandres": [
+        "./dist/lib/themes/poimandres/index.d.ts"
+      ],
+      "shadeOfPurple": [
+        "./dist/lib/themes/shadeOfPurple/index.d.ts"
+      ],
+      "themes": [
+        "./dist/lib/themes/index.d.ts"
+      ],
+      "panda": [
+        "./dist/lib/themes/panda/index.d.ts"
+      ],
+      "moonlight": [
+        "./dist/lib/themes/moonlight/index.d.ts"
+      ],
+      "vitesseDark": [
+        "./dist/lib/themes/vitesseDark/index.d.ts"
+      ],
+      "githubDarkDimmed": [
+        "./dist/lib/themes/githubDarkDimmed/index.d.ts"
+      ]
+    }
+  },
+  "scripts": {
+    "dev": "vite serve ./dev --host",
+    "build": "rollup -c",
+    "build:dev": "vite build ./dev",
+    "pre-commit": "lint-staged --relative",
+    "pre-commit-prettier": "prettier --write",
+    "pre-commit-eslint": "eslint --ext .js,.jsx,.mjs,.ts,.tsx -c ../../.eslintrc.js --fix",
+    "lint": "eslint . --ext .js,.jsx,.mjs,.ts,.tsx -c ../../.eslintrc.js",
+    "generate:theme": "tsx scripts/generate-theme.cts",
+    "clean": "rimraf dist",
+    "build-esm": "tsc -p tsconfig.esm.json",
+    "build-dts": "tsc -p tsconfig.dts.json",
+    "typecheck": "tsc --noEmit --skipLibCheck --project tsconfig.json",
+    "typecheck:ci": "tsc --skipLibCheck --project tsconfig.dts.json"
+  },
+  "dependencies": {
+    "@codemirror/language": "^6.3.1",
+    "@codemirror/state": "^6.1.4",
+    "@codemirror/theme-one-dark": "^6.1.0",
+    "@codemirror/view": "^6.7.1",
+    "@lezer/highlight": "^1.1.3",
+    "@primer/primitives": "^7.9.0",
+    "@solid-primitives/props": "^2.2.2"
+  },
+  "peerDependencies": {
+    "@codemirror/language": "^6.2.1",
+    "@codemirror/state": "^6.1.2",
+    "@codemirror/view": "^6.3.1",
+    "@lezer/highlight": "^1.1.1"
+  },
+  "devDependencies": {
+    "@codeimage/ui": "workspace:*",
+    "@codeimage/vanilla-extract": "workspace:*",
+    "@codemirror/lang-javascript": "^6.1.2",
+    "@rollup/plugin-typescript": "^9.0.1",
+    "@solid-aria/focus": "^0.1.4",
+    "@types/node": "^18.11.0",
+    "@types/prettier": "^2.7.1",
+    "@vanilla-extract/css": "^1.9.1",
+    "@vanilla-extract/dynamic": "^2.0.2",
+    "chalk": "5.1.2",
+    "enquirer": "2.3.6",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.79.1",
+    "rollup-plugin-dts": "^5.0.0",
+    "solid-codemirror": "^2.0.2",
+    "solid-js": "^1.6.3",
+    "ts-morph": "16.0.0",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.8",
+    "vite-plugin-dts": "^1.6.6",
+    "vite-plugin-solid": "^2.3.9"
+  }
+}

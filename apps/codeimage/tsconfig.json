@@ -1,0 +1,35 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "importHelpers": true,
+    "resolveJsonModule": true,
+    "jsxImportSource": "solid-js",
+    "types": [
+      "vite/client",
+      "vite-plugin-pwa/client"
+    ],
+    "lib": [
+      "ESNext",
+      "dom",
+      "dom.iterable",
+      "es2019",
+      "WebWorker"
+    ],
+    "paths": {
+      "@codeimage/store/*": [
+        "./src/state/*"
+      ],
+      "@core/*": [
+        "./src/core/*"
+      ],
+      "@ui/*": [
+        "./src/ui/*"
+      ]
+    }
+  },
+  "include": [
+    "./src/**/*",
+    "./scripts/**/*"
+  ]
+}

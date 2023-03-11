@@ -1,0 +1,102 @@
+{
+  "name": "codeimage",
+  "version": "1.3.1",
+  "description": "Create elegant code screenshots of your source code",
+  "info": "Codeimage is the newest open source tool to help developers to create beautiful screenshots of their code, providing several features to speed up the process to post in social media. It's built on the top of solid-js and has a rich choice of customizations, 15+ custom themes, supports for mobile devices and much more!",
+  "homepage": "https://codeimage.dev/",
+  "private": true,
+  "sideEffects": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/riccardoperra/codeimage"
+  },
+  "bugs": "https://github.com/riccardoperra/codeimage/issues",
+  "license": "MIT",
+  "keywords": [
+    "solidhack",
+    "solidjs",
+    "best_app",
+    "code",
+    "editor",
+    "elegant",
+    "snippets",
+    "screenshot"
+  ],
+  "contributors": [
+    {
+      "name": "Riccardo Perra",
+      "email": "riccardo.perra@icloud.com",
+      "url": "https://riccardoperra.com"
+    }
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "postinstall": "pnpm patch-solid-exports",
+    "dev": "pnpm --filter=@codeimage/app dev",
+    "dev:api": "pnpm --filter=@codeimage/api dev",
+    "libs:build": "pnpm libs:build:core && pnpm libs:build:config",
+    "libs:build:core": "pnpm --filter \"{packages/**}\" --filter='!@codeimage/config' --parallel build",
+    "libs:build:config": "pnpm --filter=@codeimage/config build",
+    "libs:build:watch": "pnpm --filter \"{packages/**}\" --filter='!@codeimage/config' --parallel --aggregate-output build:watch",
+    "lint": "pnpm --filter='@codeimage/*' --parallel -r lint",
+    "typecheck": "pnpm --filter='@codeimage/*' --recursive --parallel typecheck",
+    "build:prod": "pnpm libs:build && pnpm --filter=@codeimage/app build",
+    "changeset:pr": "changeset version && tsx scripts/sync-package.ts",
+    "pre-commit": "lint-staged --relative",
+    "patch-solid-exports": "cross-env APPLY_PATCH=true tsx scripts/patch-solid-exports.ts",
+    "unpatch-solid-exports": "cross-env APPLY_PATCH=false tsx scripts/patch-solid-exports.ts",
+    "pre-commit-prettier": "prettier --write",
+    "pre-commit-eslint": "eslint --ext .js,.jsx,.mjs,.ts,.tsx -c .eslintrc.js --fix",
+    "prepare:env": "tsx ./scripts/make-env.ts",
+    "prepare:env:codesandbox": "RUN_ON_CODESANDBOX=true tsx ./scripts/make-env",
+    "prepare:api:deploy": "pnpm-bundle-workspace-package @codeimage/api --outDir=dist/api-bundle && rm -rf dist/api-bundle/workspace-dependencies/prisma-models/.gitignore"
+  },
+  "devDependencies": {
+    "@changesets/assemble-release-plan": "^5.2.2",
+    "@changesets/changelog-github": "^0.4.7",
+    "@changesets/cli": "^2.25.0",
+    "@changesets/config": "^2.2.0",
+    "@changesets/pre": "^1.0.13",
+    "@changesets/read": "^0.5.8",
+    "@commitlint/cli": "17.1.2",
+    "@commitlint/config-angular": "17.1.0",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@types/node": "^18.11.0",
+    "@types/prettier": "^2.7.1",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "chalk": "5.1.2",
+    "cross-env": "^7.0.3",
+    "enquirer": "2.3.6",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-solid": "^0.7.3",
+    "husky": "8.0.1",
+    "lint-staged": "^13.0.3",
+    "pnpm-bundle-workspace-package": "^1.0.2",
+    "prettier": "^2.7.1",
+    "tslib": "^2.4.0",
+    "tsx": "^3.10.1",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.8"
+  },
+  "engines": {
+    "pnpm": ">=7"
+  },
+  "pnpm": {
+    "overrides": {
+      "@vanilla-extract/integration": "6.0.1",
+      "solid-js": "1.6.3"
+    },
+    "allowNonAppliedPatches": false
+  },
+  "dependencies": {
+    "statebuilder": "^0.2.3"
+  }
+}
