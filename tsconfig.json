@@ -1,32 +1,35 @@
 {
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "strict": true,
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
     "jsx": "preserve",
-    "jsxImportSource": "solid-js",
-    "declaration": true,
-    "sourceMap": true,
     "importHelpers": true,
     "resolveJsonModule": true,
-    "importsNotUsedAsValues": "remove",
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
+    "jsxImportSource": "solid-js",
     "types": [
-      "vite/client"
+      "vite/client",
+      "vite-plugin-pwa/client"
     ],
     "lib": [
+      "ESNext",
       "dom",
-      "ESNext"
-    ]
+      "dom.iterable",
+      "es2019",
+      "WebWorker"
+    ],
+    "paths": {
+      "@codeimage/store/*": [
+        "./src/state/*"
+      ],
+      "@core/*": [
+        "./src/core/*"
+      ],
+      "@ui/*": [
+        "./src/ui/*"
+      ]
+    }
   },
   "include": [
-    "@types",
-    "packages",
-    "scripts"
-  ],
-  "exclude": ["**/node_modules"]
+    "./src/**/*",
+    "./scripts/**/*"
+  ]
 }
